@@ -6,7 +6,7 @@ header{
 background: rgba(202, 202, 202, 1);    font-family: 'Roboto Mono';
     display: flex;
     justify-content: space-between;
-
+color: var(--color-textandbuttons-light);
 }
 
    main{   
@@ -16,6 +16,7 @@ background: rgba(202, 202, 202, 1);    font-family: 'Roboto Mono';
     min-height: 100vh;
     padding: 100px 30px;
     font-family: 'Roboto' ;
+     color: var(--color-textandbuttons-light);
 }
 
 input,label,button{

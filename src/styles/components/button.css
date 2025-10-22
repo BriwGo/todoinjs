@@ -1,0 +1,18 @@
+.button{
+    display: inline-flex;
+    align-items: center;
+    height: var(--input-height);   
+    padding: 23px;
+    color: #F2F2F2 ;
+    background-color: var(--color-textandbuttons-light);
+    border-radius: var(--border-radius);
+     border: none;
+     font-size: 20px;
+
+&:hover{
+        color: var(--color-placeholdertext-light);
+}
+&:active{
+    scale: 1.05;
+}
+}

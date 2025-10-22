@@ -14,8 +14,8 @@
     --color-placeholdertext-light:#B2B2B2;
     --color-placeholdertext-dark:#4B4B4B;    
 
-    --border--light:2px solid var(--color-border-light)
-    --border--light:2px solid var(--color-border-dark)
+    --border--light:2px solid var(--color-border-light);
+    --border--dark:2px solid var(--color-border-dark);
     --border-radius:50px;   
 
     --box-shadow:116px -23px 33px 0px rgba(0, 0, 0, 0),74px -15px 30px 0px rgba(0, 0, 0, 0.03),42px -8px 25px 0px rgba(0, 0, 0, 0.1),18px -4px 19px 0px rgba(0, 0, 0, 0.17),5px -1px 10px 0px rgba(0, 0, 0, 0.2);
