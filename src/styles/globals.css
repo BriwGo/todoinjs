@@ -1,0 +1,29 @@
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--color-backgound-body-light);
+}
+header{
+background: rgba(202, 202, 202, 1);    font-family: 'Roboto Mono';
+    display: flex;
+    justify-content: space-between;
+
+}
+
+   main{   
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    padding: 100px 30px;
+    font-family: 'Roboto' ;
+}
+
+input,label,button{
+    transition-duration: var(--transition-duration);
+}
+
+:focus-visible{
+    outline: 2px dashed var(--color-textandbuttons-light);
+    outline-offset: 4px;
+    transition-duration: 0s !important;
+}

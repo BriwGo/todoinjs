@@ -1,0 +1,26 @@
+:root{
+    --color-backgound-footer-light:#CACACA;
+    --color-backgound-footer-dark:#1A1A1A;
+
+    --color-backgound-body-dark:#1C1C1C;
+    --color-backgound-body-light:#DEDEDE;
+
+    --color-border-light:#C5C5C5;
+    --color-border-dark:#868686;
+
+    --color-textandbuttons-light:#434343;
+    --color-textandbuttons-dark:#DEDEDE;
+
+    --color-placeholdertext-light:#B2B2B2;
+    --color-placeholdertext-dark:#4B4B4B;    
+
+    --border--light:2px solid var(--color-border-light)
+    --border--light:2px solid var(--color-border-dark)
+    --border-radius:50px;   
+
+    --box-shadow:116px -23px 33px 0px rgba(0, 0, 0, 0),74px -15px 30px 0px rgba(0, 0, 0, 0.03),42px -8px 25px 0px rgba(0, 0, 0, 0.1),18px -4px 19px 0px rgba(0, 0, 0, 0.17),5px -1px 10px 0px rgba(0, 0, 0, 0.2);
+    
+    --input-height:60px;
+
+    --transition-duration:0,2ms ;
+}
