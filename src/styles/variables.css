@@ -2,7 +2,7 @@
     --color-backgound-footer-light:#CACACA;
     --color-backgound-footer-dark:#1A1A1A;
 
-    --color-backgound-body-dark:#1C1C1C;
+    --color-backgound-body-dark:#1C1C1E;
     --color-backgound-body-light:#DEDEDE;
 
     --color-border-light:#C5C5C5;
@@ -22,5 +22,19 @@
     
     --input-height:60px;
 
-    --transition-duration:0,2ms ;
+    
+    --transition-duration: 0.2s ;
+
+
+    --color-todo-bg-light: #F2F2F2;
+    --color-todo-bg-dark: #222428;
+    --color-input-bg-light: #FFFFFF;
+    --color-input-bg-dark: #1E1E1E;
+
+    --color-button-text-light: #F2F2F2;
+    --color-button-text-dark: #1A1A1A;
+
+    --color-todo-bg: var(--color-todo-bg-light);
+    --color-input-bg: var(--color-input-bg-light);
+    --color-button-text: var(--color-button-text-light);
 }

@@ -1,18 +1,22 @@
 .button{
     display: inline-flex;
     align-items: center;
-    height: var(--input-height);   
-    padding: 23px;
-    color: #F2F2F2 ;
+    justify-content: center;
+    height: var(--input-height);  
+    padding: 0 23px;              
+    color: var(--color-button-text);
     background-color: var(--color-textandbuttons-light);
     border-radius: var(--border-radius);
-     border: none;
-     font-size: 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1;
+}
 
-&:hover{
-        color: var(--color-placeholdertext-light);
+.button:hover{
+    color: var(--color-placeholdertext-light);
 }
-&:active{
-    scale: 1.05;
-}
+
+.button:active{
+    transform: scale(0.98);
 }

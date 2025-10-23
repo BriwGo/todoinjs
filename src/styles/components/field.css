@@ -1,16 +1,42 @@
-.field{
-    position: relative;
-    
-    &:has(.field__input:not(:placeholder-shown)) .field__label{
-        scale: 0.7;
-        translate:  -1.75em -2.6em;
-        color: var(--color-textandbuttons-light);
-    }
+
+.field {
+  display: block; 
 }
-.field__label{
-    position:absolute;
-    top: 50%;
-    left:25px;
-    color: var(--color-placeholdertext-light);
-    translate: 0 -50%;
+
+.field__input {
+  box-sizing: border-box;
+  height: var(--input-height);       
+  min-height: var(--input-height);
+  padding: 0 18px 0 18px;
+  padding-right: 160px; /* make input occupy work area, reserve space on the right */
+  border-radius: var(--border-radius);
+  border: var(--border--light);
+  background-color: var(--color-input-bg);
+  color: var(--color-textandbuttons-light);
+  font-size: 20px;
+  outline: none;
+  transition: box-shadow var(--transition-duration), border-color var(--transition-duration);
+}
+
+
+.field__input::placeholder {
+  color: var(--color-placeholdertext-light);
+  opacity: 1;
+}
+
+
+.field__input:focus {
+  box-shadow: 0 0 0 4px rgba(0,0,0,0.03);
+  border-color: var(--color-textandbuttons-light);
+}
+
+
+.todo_form .field__input {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+
+[data-js-todo-search-task-form] .field__input {
+  padding-right: 48px; 
 }

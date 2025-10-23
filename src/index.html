@@ -7,75 +7,75 @@
     <title>To Do</title>
 
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
     <script src="script.js" type="module"></script>
 </head>
 
 <body>
+    <div id="app-loader" class="app-loader" aria-hidden="false">
+        <div class="app-loader__inner">
+            <div class="app-loader__bubble"></div>
+            <div class="app-loader__text">Loading</div>
+        </div>
+    </div>
     <header class="todo__header">
-<p class="todo__header-name">mini works</p>
-<button class="todo-header-mode-button button">Ha</button>
-
+        <p class="todo__header-name">mini works</p>
+        <button class="todo-header-mode-button" aria-label="Toggle dark mode"></button>
     </header>
 
-<main class="todo_main">
-<div class="todo" data-js-todo >
-    <h1 class="todo__title">To Do List</h1>
-    <form action="" class="todo__form" data-js-todo-new-task-form>
-        <div class="todo__field field">
-            <label for="new-task" class="field_label">
-                New task title
-            </label>
-            <input placeholder=" " class="field__input" id="new-task" autocomplete="off"data-js-todo-new-task-input>
-        </div>
-        <button class="button" type="submit">Add</button>
-    </form>
+    <main class="todo_main">
+        <div class="todo" data-js-todo>
+            <h1 class="todo__title">To Do List</h1>
 
-    <form action="" class="todo__form" data-js-todo-search-task-form>
-        <div class="todo__field field">
-            <label for="search-task" class="field_label">
-                Search task
-            </label>
-            <input placeholder=" " type="search" class="field__input" id="search-task" autocomplete="off" data-js-todo-search-task-input>
-        </div>
-    </form>
+            <form class="todo__form" data-js-todo-new-task-form>
+                <input placeholder="New task title" class="field__input" id="new-task" autocomplete="off"
+                    data-js-todo-new-task-input />
+                <button class="button" type="submit">Add</button>
+            </form>
 
-    <div class="todo__info">
-        <div class="todo__total-tasks">
-            Total Tasks <span data-js-todo-total-taskm>0</span>
-        </div>
-        <button class="todo__delete-all-button" type="button" data-js-todo-delete-all-button>Delete All</button>
-    </div>
+            <form class="todo__form" data-js-todo-search-task-form>
+                <input placeholder="Search task" class="field__input" id="search-task" autocomplete="off"
+                    data-js-todo-search-task-input />
+            </form>
 
-    <ul class="todo__list" data-js-todo-list>
-        <li class="todo__item todo-item" data-js-todo-item>
-            <input class="todo-item__checkbox" id="todo1" type="checkbox" data-js-todo-item-checkbox>
-            <label for="todo1" class="todo-item__label"data-js-todo-item-label>
-                <button class="todo__item_delete-button" type="button" aria-label="Delete" title="Delete" data-js-todo-item-delete-button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <title>Cross-outline SVG Icon</title>
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+            <div class="todo__info">
+                <div class="todo__total-tasks">
+                    Total Tasks <span data-js-todo-total-tasks>0</span>
+                </div>
+                <button class="todo__delete-all-button" type="button" data-js-todo-delete-all-button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
                     </svg>
+                    Delete All
                 </button>
-        </li>
-        <li class="todo__item todo-item" data-js-todo-item>
-            <input class="todo-item__checkbox" id="todo1" type="checkbox" data-js-todo-item-checkbox>
-            <label for="todo1" class="todo-item__label" data-js-todo-item-label>
-                <button class="todo__item_delete-button" type="button" aria-label="Delete" title="Delete" data-js-todo-item-delete-button>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                        <title>Cross-outline SVG Icon</title>
-                        <path fill="none" stroke="currentColor" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
-                    </svg>
-                </button>
-        </li>
-    </ul>
-    <div class="todo__empty-message" data-js-todo-empty-message ></div>
-   
-</main>
-<footer class="todo_footer">
-<h4>by Briw 2025</h4>
-<a>Go to Site</a>
-<a>Go to GitHub</a>
-</footer>
-    </body>
+            </div>
+
+            <ul class="todo__list" data-js-todo-list>
+                <li class="todo__item todo-item" data-js-todo-item>
+                    <button class="todo-item__delete-button" type="button" aria-label="Delete" title="Delete"
+                        data-js-todo-item-delete-button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                            <title>Cross-outline SVG Icon</title>
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" d="m6 6l12 12m0-12L6 18" />
+                        </svg>
+                    </button>
+                    <label for="todo-1" class="todo-item__label" data-js-todo-item-label>
+                        Task 1 Example
+                    </label>
+                    <input class="todo-item__checkbox" id="todo-1" type="checkbox" data-js-todo-item-checkbox />
+                </li>
+            </ul>
+            <div class="todo__empty-message" data-js-todo-empty-message></div>
+        </div>
+    </main>
+
+    <footer class="todo_footer">
+        <h4>by Briw 2025</h4>
+        <div class="todo_footer__links">
+            <a href="#" class="footer-link footer-link--site">Go to Site</a>
+            <a href="#" class="footer-link footer-link--github">Go to GitHub</a>
+        </div>
+    </footer>
+</body>
 
 </html>
