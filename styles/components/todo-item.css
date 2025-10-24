@@ -44,18 +44,17 @@
     height: 15px;
 }
 
-
 .todo-item__checkbox {
     -webkit-appearance: none;
     appearance: none;
     position: absolute;
-    right: 0px;
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
     margin: 0;
     width: calc(var(--input-height) - 16px);
-    height: calc(var(--input-height) - 16px);
-    min-width: calc(var(--input-height) - 16px);
+    height: calc(var(--input-height));
+    min-width: calc(var(--input-height));
     border: 3px solid var(--color-placeholdertext-light);
     border-radius: 50%;
     background-color: transparent;

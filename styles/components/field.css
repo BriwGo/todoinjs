@@ -8,7 +8,7 @@
   height: var(--input-height);       
   min-height: var(--input-height);
   padding: 0 18px 0 18px;
-  padding-right: 160px; /* make input occupy work area, reserve space on the right */
+  padding-right: 160px; 
   border-radius: var(--border-radius);
   border: var(--border--light);
   background-color: var(--color-input-bg);
@@ -16,7 +16,13 @@
   font-size: 20px;
   outline: none;
   transition: box-shadow var(--transition-duration), border-color var(--transition-duration);
+ 
+
+
 }
+
+
+
 
 
 .field__input::placeholder {
